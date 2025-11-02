@@ -3,33 +3,22 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<title>？</title>
 <title>地狱列车</title>
 <style>
 body { margin:0; padding:0; font-family:"Helvetica Neue", Arial, sans-serif; background:#f9f8f6; color:#333; display:flex; flex-direction:column; align-items:center; justify-content:center; }
 .container { max-width:800px; width:90%; padding:20px; background:rgba(255,255,255,0.9); box-shadow:0 4px 20px rgba(0,0,0,0.05); border-radius:8px; }
-h1 { text-align:center; color:#555; }
-.question { margin:20px 0; }
-.options button { display:block; width:100%; margin:8px 0; padding:12px; border:none; border-radius:4px; background:#e8e6e2; color:#444; cursor:pointer; transition:0.2s; }
-.options button:hover { background:#d9d7d4; }
-#result { text-align:center; margin:40px 0; font-size:1.3em; color:#666; }
-</style>
+@@ -16,38 +16,38 @@
 </head>
 <body>
 <div class="container">
+  <h1>你是哪位人物？</h1>
   <h1>地狱列车-你是哪位人物？(共25题）</h1>
   <div id="quiz"></div>
   <div id="result"></div>
 </div>
 <script>
-<audio id="bgm" loop>
-  <source src="https://raw.githubusercontent.com/liyuiichi180-code/-/main/bgm.mp3" type="audio/mpeg">
-</audio>
-<div class="container">
-  <h1>地狱列车-你是哪位人物？(共25题）</h1>
-  <button class="bgm-btn" onclick="toggleBGM()">🎵 播放/暂停音乐</button>
-  <div id="quiz"></div>
-  <div id="result"></div>
-</div>
+  
 const questions = [
   {q:"1.如果能选择一种“防御方式”，你会选哪种？", o:["嘲讽与笑","冷漠与理智","沉默与观察","掩藏与伪装"], a:["季边飞","袁宇","黎默","白欣"]},
   {q:"2.你走进一间陌生的房子，桌上放着四样物品，你会先触碰哪一样？", o:["一杯温热的茶","一封未拆的信","一把钥匙","一本旧书"], a:["苏雨","黎默","金煜","袁宇"]},
